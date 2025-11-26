@@ -1,0 +1,13 @@
+{
+  "name": "waracle-qa-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test:open": "cypress open",
+    "test:run": "cypress run --headless",
+    "lint": "eslint . --ext .js"
+  },
+  "devDependencies": {
+    "cypress": "^12.17.0"
+  }
+}
