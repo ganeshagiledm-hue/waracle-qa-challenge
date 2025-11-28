@@ -1,9 +1,8 @@
-// cypress/support/commands.js
 Cypress.Commands.add('login', (username, password) => {
   cy.visit('/')
-  cy.get('[data-test="username"]').clear().type(username)
-  cy.get('[data-test="password"]').clear().type(password)
-  cy.get('[data-test="login-button"]').click()
+  cy.get('#user-name').clear().type(username)
+  cy.get('#password').clear().type(password)
+  cy.get('#login-button').click()
 })
 
 Cypress.Commands.add('addToCartByName', (productName) => {

@@ -1,2 +1,1 @@
-// cypress/support/index.js
-import './commands'
+// You can add custom commands here if needed

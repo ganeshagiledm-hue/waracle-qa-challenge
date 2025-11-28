@@ -10,7 +10,7 @@ describe('Authentication flows', () => {
     // logout
     cy.get('#react-burger-menu-btn').click()
     cy.get('#logout_sidebar_link').click()
-    cy.url().should('include', '/index.html')
+    cy.url().should('eq', 'https://qa-challenge.codesubmit.io/')
   })
 
   it('locked_out_user cannot log in', () => {
